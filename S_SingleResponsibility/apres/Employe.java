@@ -1,10 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Classe Employe refactorisée qui respecte le principe de Responsabilité Unique
- * en ne s'occupant que des données de l'employé.
- */
 public class Employe {
     private String id;
     private String nom;
@@ -26,7 +22,6 @@ public class Employe {
         this.historiquePerformance = new ArrayList<>();
     }
 
-    // Getters et setters
     public String getId() { return id; }
     public String getNom() { return nom; }
     public String getEmail() { return email; }
@@ -35,7 +30,7 @@ public class Employe {
     public int getHeuresTravaillees() { return heuresTravaillees; }
     public double getTauxHoraire() { return tauxHoraire; }
     public List<String> getHistoriquePerformance() { 
-        return new ArrayList<>(historiquePerformance); // Retourne une copie pour éviter la modification directe
+        return new ArrayList<>(historiquePerformance);
     }
 
     public void setHeuresTravaillees(int heuresTravaillees) {

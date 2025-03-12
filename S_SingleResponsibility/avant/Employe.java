@@ -45,7 +45,6 @@ public class Employe {
         this.historiquePerformance.add(performance);
     }
 
-    // Méthode pour calculer le salaire (Responsabilité 1)
     public double calculerSalaire() {
         double salaire = salaireBase;
         
@@ -75,7 +74,6 @@ public class Employe {
         return salaire;
     }
 
-    // Méthode pour sauvegarder les données de l'employé (Responsabilité 2)
     public void sauvegarderDonnees(String cheminFichier) {
         try (FileWriter writer = new FileWriter(cheminFichier, true)) {
             writer.write(id + "," + nom + "," + email + "," + salaireBase + "," + departement + "\n");
@@ -85,7 +83,6 @@ public class Employe {
         }
     }
 
-    // Méthode pour générer un rapport sur l'employé (Responsabilité 3)
     public String genererRapport() {
         StringBuilder rapport = new StringBuilder();
         rapport.append("Rapport de l'employé\n");
@@ -110,7 +107,6 @@ public class Employe {
         return rapport.toString();
     }
 
-    // Méthode pour envoyer un email à l'employé (Responsabilité 4)
     public void envoyerEmail(String sujet, String contenu) {
         System.out.println("Envoi d'un email à " + email);
         System.out.println("Sujet: " + sujet);
@@ -121,7 +117,6 @@ public class Employe {
         System.out.println("Email envoyé avec succès à " + email);
     }
 
-    // Méthode pour analyser les performances de l'employé (Responsabilité 5)
     public String analyserPerformance() {
         if (historiquePerformance.isEmpty()) {
             return "Aucune donnée de performance disponible.";

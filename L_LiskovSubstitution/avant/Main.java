@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        // Création d'un rectangle
         Rectangle rectangle = new Rectangle(5, 10);
         System.out.println("Rectangle initial: " + rectangle);
         System.out.println("Aire: " + rectangle.calculerAire());
@@ -32,11 +31,10 @@ public class Main {
         Rectangle c = new Carre(5);
         System.out.println("\nAvant redimensionnement: " + c);
         redimensionner(c, 2, 3);
+        System.out.println(c.calculerAire());
         System.out.println("Après redimensionnement: " + c);
-        System.out.println("Aire attendue: 2 * 3 = 6, Aire obtenue: " + c.calculerAire());
-        System.out.println("Le carré a une aire de 9 au lieu de 6, car la hauteur a été modifiée pour correspondre à la largeur!");
     }
-    
+
 
     public static void redimensionner(Rectangle rectangle, double largeur, double hauteur) {
         rectangle.setLargeur(largeur);

@@ -1,8 +1,3 @@
-/**
- * Classe représentant un carré, qui est un cas particulier de rectangle.
- * Cette implémentation viole le principe de Substitution de Liskov car
- * un carré a des contraintes supplémentaires par rapport à un rectangle.
- */
 public class Carre extends Rectangle {
     
     public Carre(double cote) {

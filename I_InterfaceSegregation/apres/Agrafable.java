@@ -4,10 +4,6 @@
  * en ne définissant que les fonctionnalités liées à l'agrafage.
  */
 public interface Agrafable {
-    /**
-     * Agrafe les documents imprimés.
-     * 
-     * @return true si l'agrafage a réussi, false sinon
-     */
+
     boolean agrafer();
 } 

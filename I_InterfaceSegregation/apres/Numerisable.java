@@ -4,10 +4,6 @@
  * en ne définissant que les fonctionnalités liées à la numérisation.
  */
 public interface Numerisable {
-    /**
-     * Numérise un document.
-     * 
-     * @return Le document numérisé sous forme de chaîne de caractères
-     */
+
     String numeriser();
 } 

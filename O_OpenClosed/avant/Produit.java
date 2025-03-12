@@ -1,18 +1,14 @@
-/**
- * Classe représentant un produit.
- */
 public class Produit {
     private String nom;
     private double prix;
-    private String type; // "Alimentaire", "Electronique", "Vetement", "Livre"
+    private String type;
     
     public Produit(String nom, double prix, String type) {
         this.nom = nom;
         this.prix = prix;
         this.type = type;
     }
-    
-    // Getters
+
     public String getNom() {
         return nom;
     }

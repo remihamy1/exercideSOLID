@@ -17,6 +17,7 @@ public class Main {
         afficherDetails(calculateur, smartphone);
         afficherDetails(calculateur, tShirt);
         afficherDetails(calculateur, roman);
+
         
         // Ajout d'un nouveau type de produit sans modifier la classe CalculateurTaxes
         // Ce qui respecte le principe Ouvert/Fermé

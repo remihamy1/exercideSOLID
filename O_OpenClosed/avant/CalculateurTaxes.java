@@ -1,8 +1,7 @@
 public class CalculateurTaxes {
     
     public double calculerTaxe(Produit produit) {
-        // Violation du principe Ouvert/Fermé : on doit modifier cette méthode
-        // chaque fois qu'un nouveau type de produit est ajouté
+
         if ("Alimentaire".equals(produit.getType())) {
             // Les produits alimentaires ont une taxe de 5.5%
             return produit.getPrix() * 0.055;
@@ -19,6 +18,7 @@ public class CalculateurTaxes {
             // Taxe par défaut de 15%
             return produit.getPrix() * 0.15;
         }
+
     }
     
     public double calculerPrixTotal(Produit produit) {

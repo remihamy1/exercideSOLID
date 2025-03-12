@@ -1,6 +1,3 @@
-/**
- * Classe abstraite qui implémente l'interface Produit et fournit les fonctionnalités de base.
- */
 public abstract class ProduitBase implements Produit {
     private String nom;
     private double prix;
